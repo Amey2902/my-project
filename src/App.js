@@ -79,14 +79,14 @@ function App()
     const weiAmount = ethers.utils.parseEther(amount);
 
     if (userBalance.lt(weiAmount)) {
-      return alert("❌ You don't have enough Ether to withdraw that amount.");
+      return alert("You don't have enough Ether to withdraw that amount.");
     }
 
     const contract = new ethers.Contract(contractAddress, abi, signer);
     const tx = await contract.withdrawAmt(weiAmount);
     await tx.wait();
 
-    alert("Withdrawal successful ✅");
+    alert("Withdrawal successful");
 
     const updatedBal = await provider.getBalance(contractAddress);
     setContractBalance(ethers.utils.formatEther(updatedBal));
@@ -114,7 +114,7 @@ function App()
     const tx = await contract.deposit({ value: weiAmount });
     await tx.wait();
 
-    alert("Deposit successful ✅");
+    alert("Deposit successful");
 
     const updatedBal = await provider.getBalance(contractAddress);
     setContractBalance(ethers.utils.formatEther(updatedBal));
@@ -175,17 +175,8 @@ function App()
     )}
   </ul>
 </div>
-
-
-
            <button className="depo" onClick={handleDeposit}>{'\u2B06\uFE0F'}Deposit</button>
-           <button className="depo2" onClick={handleWithdraw}>{'\u2B07\uFE0F'} Withdraw</button>
-          
-
-
-
-           
-            
+           <button className="depo2" onClick={handleWithdraw}>{'\u2B07\uFE0F'} Withdraw</button>   
         </div>
     )
 }
