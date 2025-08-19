@@ -107,7 +107,7 @@ function App()
     const weiAmount = ethers.utils.parseEther(amount);
 
     if (userBalance.lt(weiAmount)) {
-      return alert("❌ You don't have enough Ether to deposit that amount.");
+      return alert(" You don't have enough Ether to deposit that amount.");
     }
 
     const contract = new ethers.Contract(contractAddress, abi, signer);
