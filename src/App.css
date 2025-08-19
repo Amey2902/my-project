@@ -1,0 +1,238 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f9ff, #e0f7fa);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header Card */
+.card {
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #7f8c8d;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  margin: 10px 8px;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.Metamask {
+  background-color: #f6851b;
+  color: white;
+}
+
+.google {
+  background-color: #4285f4;
+  color: white;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Wallet Info */
+.wallet-info {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  color: #2d3748;
+}
+
+.wallet-info .faded {
+  color: #718096;
+  font-weight: 500;
+}
+
+/* Smart Contract Interface */
+.smtLogic {
+  margin-top: 30px;
+}
+
+.smtLogic h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+/* Input styling */
+#amount {
+  padding: 10px;
+  width: 200px;
+  font-size: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.2s;
+  margin: 10px auto;
+}
+
+#amount:focus {
+  border-color: #4299e1;
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.3);
+}
+
+/* Balance Card */
+.balance-card {
+  background-color: #e6fffa;
+  border: 1px solid #b2f5ea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 25px;
+  color: #2c7a7b;
+}
+
+.balance-card h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.balance-card p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* History Card */
+.history-card {
+  background-color: #fefcbf;
+  border: 1px solid #faf089;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #975a16;
+  text-align: left;
+}
+
+.history-card h4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.history-card ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.history-card li {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* Deposit / Withdraw Buttons */
+.depo,
+.depo2 {
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  margin: 12px 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.depo {
+  background-color: #38a169;
+  color: white;
+}
+
+.depo2 {
+  background-color: #e53e3e;
+  color: white;
+}
+
+.depo:hover,
+.depo2:hover,
+.google:hover,
+.Metamask:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+.btn {
+  padding: 10px 20px;
+  margin: 10px 0;  /* Was spaced for two buttons, keep balanced */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn.Metamask {
+  background-color: #f6851b;
+  color: white;
+}
+
+.btn.Metamask:disabled {
+  background-color: #c1c1c1;
+  cursor: not-allowed;
+}
+
